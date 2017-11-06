@@ -22,6 +22,10 @@ RUN apt-get update && \
         google-cloud-sdk-app-engine-java && \
         add-apt-repository ppa:webupd8team/java && \
         apt-get update && \
+        echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | \
+        /usr/bin/debconf-set-selections && \
+        echo oracle-java7-installer shared/accepted-oracle-license-v1-1 seen true | \
+        /usr/bin/debconf-set-selections && \
         apt-get install -y oracle-java8-installer maven && \
         apt-get clean && \
         gcloud config set core/disable_usage_reporting true && \
