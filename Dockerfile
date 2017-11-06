@@ -7,3 +7,4 @@ RUN apt-get update && \
 RUN add-apt-repository ppa:andrei-pozolotin/maven3 -y
 RUN add-apt-repository ppa:webupd8team/java -y && apt-get update
 RUN apt-get install -y oracle-java8-installer maven3 -y
+CMD [ "/bin/bash" ]
