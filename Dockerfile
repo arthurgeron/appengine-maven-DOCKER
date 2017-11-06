@@ -21,9 +21,8 @@ RUN apt-get update && \
         apt-get install -y google-cloud-sdk \
         google-cloud-sdk-app-engine-java && \
         add-apt-repository ppa:webupd8team/java && \
-        add-apt-repository ppa:andrei-pozolotin/maven3 && \
         apt-get update && \
-        apt-get install -y oracle-java8-installer maven3 && \
+        apt-get install -y oracle-java8-installer maven && \
         apt-get clean && \
         gcloud config set core/disable_usage_reporting true && \
         gcloud config set component_manager/disable_update_check true && \
