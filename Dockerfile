@@ -19,9 +19,8 @@ RUN apt-get update && \
         curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - && \
         apt-get update && \
         apt-get install -y google-cloud-sdk \
-        google-cloud-sdk-app-engine-java \
+        google-cloud-sdk-app-engine-java && \
         add-apt-repository ppa:webupd8team/java && \
-        apt-get update && \
         add-apt-repository ppa:andrei-pozolotin/maven3 && \
         apt-get update && \
         apt-get install -y oracle-java8-installer maven3 && \
