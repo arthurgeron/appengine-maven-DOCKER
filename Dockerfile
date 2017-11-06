@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Arthur Geron <johnnyblack000@hotmail.com>
+LABEL maintainer="Arthur Geron <johnnyblack000@hotmail.com>"
 
 USER root
 
