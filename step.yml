@@ -1,0 +1,28 @@
+name: heroku-deploy
+version: 3.1.0
+summary: heroku-deploy step
+tags:
+  - heroku
+  - deploy
+properties:
+- name: user
+  type: string
+  required: false
+- name: key
+  type: string
+  required: false
+- name: app_name
+  type: string
+  required: false
+- name: key_name
+  type: string
+  required: true
+- name: keep_repository
+  type: string
+  required: false
+- name: install_toolbelt
+  type: string
+  required: false
+- name: run
+  type: string
+  required: false
