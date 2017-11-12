@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM node
 LABEL maintainer="Arthur Geron <johnnyblack000@hotmail.com>"
 
 USER root
