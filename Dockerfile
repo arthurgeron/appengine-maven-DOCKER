@@ -9,11 +9,15 @@ RUN apt-get update && \
         curl \
         gcc \
         python-dev \
+        libffi-dev \
+        libssl-dev \
         python-setuptools \
         apt-transport-https \
         lsb-release \
         openssh-client \
         git && \
+        apt-get install -y python-pip && \
+        pip install pyopenssl && \
         export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)" && \
         echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | tee -a /etc/apt/sources.list.d/google-cloud-sdk.list && \
         curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - && \
